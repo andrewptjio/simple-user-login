@@ -12,7 +12,7 @@ ADD . /app
 ##buat executeable
 RUN go build -o main .
 
-EXPOSE 8000
+EXPOSE 8080
 
 ##jalankan executeable
 CMD ["/app/main"]
