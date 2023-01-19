@@ -7,10 +7,6 @@ Simple User Login REST API using echo server.
 2. Add .env file using the .envexample
 3. Run this docker command inside the directory   
     ```
-    docker build -t simple-user-login .
-    ```
-4. This docker command as well
-    ```
     docker compose up
     ```
 

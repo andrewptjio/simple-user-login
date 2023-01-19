@@ -38,7 +38,7 @@ func registerUser() echo.HandlerFunc {
 
 		// check logic
 		if err := r.Check(); err != nil {
-			return c.JSON(http.StatusNotAcceptable, util.ErrorResponse(400, err))
+			return c.JSON(http.StatusNotAcceptable, util.ErrorResponse(406, err))
 		}
 
 		// create user
@@ -75,7 +75,7 @@ func loginUser() echo.HandlerFunc {
 
 		// check logic
 		if err := r.Check(); err != nil {
-			return c.JSON(http.StatusNotAcceptable, util.ErrorResponse(400, err))
+			return c.JSON(http.StatusNotAcceptable, util.ErrorResponse(406, err))
 		}
 
 		// create token
@@ -147,7 +147,7 @@ func editUser() echo.HandlerFunc {
 
 		// check logic
 		if err := r.Check(); err != nil {
-			return c.JSON(http.StatusNotAcceptable, util.ErrorResponse(400, err))
+			return c.JSON(http.StatusNotAcceptable, util.ErrorResponse(406, err))
 		}
 
 		// update user
@@ -187,7 +187,7 @@ func removeUser() echo.HandlerFunc {
 
 		// check logic
 		if err := r.Check(); err != nil {
-			return c.JSON(http.StatusNotAcceptable, util.ErrorResponse(400, err))
+			return c.JSON(http.StatusNotAcceptable, util.ErrorResponse(406, err))
 		}
 
 		// delete user

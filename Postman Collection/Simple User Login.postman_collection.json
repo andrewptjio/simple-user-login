@@ -90,7 +90,7 @@
 					"body": "{\n    \"code\": 200,\n    \"message\": \"Successful Operation\",\n    \"data\": {\n        \"user\": {\n            \"ID\": \"63c80564aae0366628871899\",\n            \"username\": \"tester2\",\n            \"password\": \"$2a$14$nzx/VnWUHT4yrRN8FtXdKOWvsg/aQaxViDxcdDW.cZiTS2R0TwoAO\",\n            \"role\": \"user\",\n            \"name\": \"ucok\",\n            \"age\": 17\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzQzMTIxNjQsIm9iamVjdElEIjoiNjNjODA1NjRhYWUwMzY2NjI4ODcxODk5Iiwicm9sZSI6InVzZXIiLCJ1c2VybmFtZSI6InRlc3RlcjIifQ.LYzQKtUD6xzmDh7Ci7uPBgZvMrlPTFZ1nUwLnhLnWlo\"\n    }\n}"
 				},
 				{
-					"name": "400 Not Acceptable Username",
+					"name": "406 Not Acceptable Username",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -132,10 +132,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": 400,\n    \"message\": {\n        \"message\": \"Username existed\"\n    }\n}"
+					"body": "{\n    \"code\": 406,\n    \"message\": {\n        \"message\": \"Username existed\"\n    }\n}"
 				},
 				{
-					"name": "400 Not Acceptable Password",
+					"name": "406 Not Acceptable Password",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -177,10 +177,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": 400,\n    \"message\": {\n        \"message\": \"Password has to be more than 8 characters\"\n    }\n}"
+					"body": "{\n    \"code\": 406,\n    \"message\": {\n        \"message\": \"Password has to be more than 8 characters\"\n    }\n}"
 				},
 				{
-					"name": "400 Not Acceptable Role",
+					"name": "406 Not Acceptable Role",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -222,10 +222,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": 400,\n    \"message\": {\n        \"message\": \"Invalid Role\"\n    }\n}"
+					"body": "{\n    \"code\": 406,\n    \"message\": {\n        \"message\": \"Invalid Role\"\n    }\n}"
 				},
 				{
-					"name": "400 Not Acceptable Age <17",
+					"name": "406 Not Acceptable Age <17",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -267,10 +267,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": 400,\n    \"message\": {\n        \"message\": \"Age must be greater than 17\"\n    }\n}"
+					"body": "{\n    \"code\": 406,\n    \"message\": {\n        \"message\": \"Age must be greater than 17\"\n    }\n}"
 				},
 				{
-					"name": "400 Not Acceptable Age >100",
+					"name": "406 Not Acceptable Age >100",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -312,7 +312,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": 400,\n    \"message\": {\n        \"message\": \"Age must be less than 100\"\n    }\n}"
+					"body": "{\n    \"code\": 406,\n    \"message\": {\n        \"message\": \"Age must be less than 100\"\n    }\n}"
 				}
 			]
 		},
@@ -401,7 +401,7 @@
 					"body": "{\n    \"code\": 200,\n    \"message\": \"Successful Operation\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzQzMTIxMzksIm9iamVjdElEIjoiNjNjODA1NDRhYWUwMzY2NjI4ODcxODkzIiwicm9sZSI6ImFkbWluIiwidXNlcm5hbWUiOiJhZG1pbl9zYW1wbGUifQ.bNN69np08eSsi84Idulqg9UAplRnm0nvtZvsz0Nr_C8\"\n    }\n}"
 				},
 				{
-					"name": "400 Not Accetable",
+					"name": "406 Not Accetable",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -443,7 +443,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": 400,\n    \"message\": {\n        \"message\": \"Wrong Username/Password\"\n    }\n}"
+					"body": "{\n    \"code\": 406,\n    \"message\": {\n        \"message\": \"Wrong Username/Password\"\n    }\n}"
 				}
 			]
 		},
@@ -660,7 +660,7 @@
 					"body": "{\n    \"code\": 200,\n    \"message\": \"Successful Operation\",\n    \"data\": {\n        \"user\": {\n            \"ID\": \"63c7e89155ae47e51b968e00\",\n            \"username\": \"user_sample\",\n            \"password\": \"$2a$14$PVD1G4blhZVtSMhBU55e9eMiLYTzHSogRDImUwVSNccuzF5/arsdC\",\n            \"role\": \"user\",\n            \"name\": \"ufk\",\n            \"age\": 17\n        }\n    }\n}"
 				},
 				{
-					"name": "400 Wrong User",
+					"name": "406 Wrong User",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
@@ -701,10 +701,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": 400,\n    \"message\": {\n        \"message\": \"Wrong Username/Password\"\n    }\n}"
+					"body": "{\n    \"code\": 406,\n    \"message\": {\n        \"message\": \"Wrong Username/Password\"\n    }\n}"
 				},
 				{
-					"name": "400 Invalid Role",
+					"name": "406 Invalid Role",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
@@ -745,7 +745,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"code\": 400,\n    \"message\": {\n        \"message\": \"Invalid Role\"\n    }\n}"
+					"body": "{\n    \"code\": 406,\n    \"message\": {\n        \"message\": \"Invalid Role\"\n    }\n}"
 				}
 			]
 		},
